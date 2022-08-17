@@ -12,6 +12,6 @@
     - [x] Salvar dados no localStorage
     - [x] Implementar objeto Bd
     - [x] Criar Indices Dinâmicos      
-- [ ] Validar dados antes do registro
+- [x] Validar dados antes do registro
     - [x] Testar os dados antes de salvar
-    - [ ] dar feedback visual para usuário  
+    - [x] Feedback visual para usuário  
