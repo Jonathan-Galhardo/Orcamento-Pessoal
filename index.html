@@ -19,7 +19,7 @@
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-
+    <script src="logica.js"></script>
 
 	</head>
 
@@ -83,7 +83,7 @@
         </div>
         
         <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
+          <input type="number" class="form-control" placeholder="Dia" id="dia" />
         </div>
 
         <div class="col-md-6">
@@ -104,7 +104,7 @@
         </div>
 
         <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Valor" id="valor" />
+          <input type="number" class="form-control" step="0.01" name="quantity" min="0.01" placeholder="Valor" id="valor" />
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
@@ -114,7 +114,50 @@
         </div>
       </div>
     </div>
-    <script src="logica.js"></script>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="erroGravacao" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-danger">
+          <h5 class="modal-title" id="TituloModalCentralizado">ERRO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Certifique-se de preencher todos os campos antes de incluir uma despesa!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar e Incluir dados</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Sucesso -->
+  <div class="modal fade" id="sucessoGravacao" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-success">
+          <h5 class="modal-title" id="TituloModalCentralizado">Despesa Salva com sucesso! </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Todos os campos preenchidos! 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
   </body>	
 
 </html>
