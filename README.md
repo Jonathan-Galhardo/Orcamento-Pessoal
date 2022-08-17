@@ -8,7 +8,7 @@
 - [x] Cadastro de Despesas 
     - [x] Recuperar os dados nos Inputs
     - [x] Criar classe despesa 
-- [ ] Criar Base de Dados
+- [x] Criar Base de Dados
     - [x] Salvar dados no localStorage
     - [x] Implementar objeto Bd
-    - [ ] Criar Indices Dinâmicos      
+    - [x] Criar Indices Dinâmicos      
