@@ -9,6 +9,13 @@ class Despesa {
     }
 }
 
+class Bd {
+    salvar(d){
+        localStorage.setItem('despesa', JSON.stringify(d))
+    }
+}
+
+let bd = new Bd()
 
 function cadastrarDespesa() {
     
@@ -23,9 +30,6 @@ function cadastrarDespesa() {
     
     let despesa = new Despesa(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)
 
-    salvar(despesa)
+    bd.salvar(despesa)
 }
 
-function salvar(d){
-    localStorage.setItem('despesa', JSON.stringify(d))
-}
