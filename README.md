@@ -5,8 +5,8 @@
         - [x] Criar página index com Inputs
         - [x] Criar página Consulta
     - [x] Criar e testar arquivos js e css
-    - [ ] Cadastro de Despesas 
+    - [x] Cadastro de Despesas 
         - [x] Recuperar os dados nos Inputs
-        - [ ] Criar classe despesa 
+        - [x] Criar classe despesa 
     - [ ] Criar Base de Dados
         - [ ] Criar Indices Dinâmicos      
