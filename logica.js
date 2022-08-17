@@ -23,5 +23,9 @@ function cadastrarDespesa() {
     
     let despesa = new Despesa(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)
 
-    console.log(despesa)
+    salvar(despesa)
+}
+
+function salvar(d){
+    localStorage.setItem('despesa', JSON.stringify(d))
 }
