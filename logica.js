@@ -117,9 +117,25 @@ function carregaListaDespesas() {
 
         //inserir valores / colunas 
 
-        linha.insertCell(0)
-        linha.insertCell(1)
-        linha.insertCell(2)
-        linha.insertCell(3)
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+
+        switch (d.tipo) {
+            case '1': d.tipo = "Alimentação"
+                break;
+            case '2': d.tipo = "Educação"
+                break;
+            case '3': d.tipo = "Lazer"
+                break;
+            case '4': d.tipo = 'Saúde'
+                break;
+            case '5': d.tipo = 'Transporte'
+                break;
+
+            default:
+                break;
+        }
+        linha.insertCell(1).innerHTML = `${d.tipo}`
+        linha.insertCell(2).innerHTML = `${d.descricao}`
+        linha.insertCell(3).innerHTML = `${d.valor}`
     })
 }
