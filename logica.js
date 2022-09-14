@@ -40,6 +40,10 @@ class Bd {
         localStorage.setItem('id', id)
     }
 
+    recuperarTodosRegistros() {
+        console.log('blablabla')
+    }
+
 }
 
 let bd = new Bd()
@@ -72,9 +76,10 @@ function cadastrarDespesa() {
         document.getElementById('button').innerHTML = 'Voltar e Corrigir'
         document.getElementById('classe-titulo').className = 'modal-header text-danger'
         document.getElementById('button').className = 'btn btn-danger'
-
-
     }
-
 }
 
+
+function carregaListaDespesas() {
+    bd.recuperarTodosRegistros()
+}
