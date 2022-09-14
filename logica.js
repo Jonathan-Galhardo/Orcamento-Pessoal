@@ -106,5 +106,20 @@ function carregaListaDespesas() {
 
     despesas = bd.recuperarTodosRegistros()
 
-    console.log(despesas)
+    let listaDespesas = document.getElementById('listadespesas')
+
+    //percorrer array despesas
+    despesas.forEach(function (d) {
+        //console.log(d)
+
+        //inserir linhas
+        let linha = listaDespesas.insertRow()
+
+        //inserir valores / colunas 
+
+        linha.insertCell(0)
+        linha.insertCell(1)
+        linha.insertCell(2)
+        linha.insertCell(3)
+    })
 }
