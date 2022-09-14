@@ -42,7 +42,6 @@ class Bd {
     }
 
     recuperarTodosRegistros() {
-        //recuperar as despesas cadastradas no LocalStorage
         //array de despesas
         let despesas = Array()
 
@@ -53,7 +52,7 @@ class Bd {
 
             //recuperar a despesa
             let despesa = JSON.parse(localStorage.getItem(i))
-            console.log(despesa)
+            //console.log(despesa)
 
             //existe a possibilidade de haver índices que foram pulados/removidos
             //nestes casos nós vamos pular esses índices
@@ -103,5 +102,9 @@ function cadastrarDespesa() {
 
 
 function carregaListaDespesas() {
-    bd.recuperarTodosRegistros()
+    let despesas = Array()
+
+    despesas = bd.recuperarTodosRegistros()
+
+    console.log(despesas)
 }
