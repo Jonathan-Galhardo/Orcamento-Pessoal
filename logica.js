@@ -149,3 +149,8 @@ function carregaListaDespesas() {
         linha.insertCell(3).innerHTML = `${d.valor}`
     })
 }
+
+function pesquisaDespesa() {
+    console.log('blablabla')
+
+}
