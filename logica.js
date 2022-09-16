@@ -65,6 +65,11 @@ class Bd {
 
         return despesas
     }
+
+    pesquisar(despesa) {
+        console.log(despesa)
+
+    }
 }
 
 let bd = new Bd()
@@ -159,6 +164,8 @@ function pesquisaDespesa() {
     let valor = document.getElementById('valor').value
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
-    console.log(despesa)
+    //console.log(despesa)
+
+    bd.pesquisar(despesa)
 
 }
