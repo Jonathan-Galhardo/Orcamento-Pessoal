@@ -1,7 +1,7 @@
 # Orçamento-Pessoal
 
 ## Deploy da aplicação
-https://portfolio-react-two-psi.vercel.app
+https://orcamento-pessoal-two.vercel.app/
 
 ## Tecnologias utilizadas:
 - CSS3
