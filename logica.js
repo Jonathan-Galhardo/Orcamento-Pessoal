@@ -210,7 +210,7 @@ function pesquisarDespesa() {
     let despesas = bd.pesquisar(despesa)
 
     let listaDespesas = document.getElementById('listadespesas')
-
+    listaDespesas.innerHTML = ''
     //percorrer array despesas
     despesas.forEach(function (d) {
         //console.log(d)
