@@ -100,6 +100,9 @@ class Bd {
         }
 
         console.log(despesasFiltradas)
+        return despesasFiltradas
+
+
         ano.value = ''
         mes.value = ''
         dia.value = ''
@@ -193,7 +196,7 @@ function carregaListaDespesas() {
     })
 }
 
-function pesquisaDespesa() {
+function pesquisarDespesa() {
     let ano = document.getElementById('ano').value
     let mes = document.getElementById('mes').value
     let dia = document.getElementById('dia').value
@@ -204,6 +207,39 @@ function pesquisaDespesa() {
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
     //console.log(despesa)
 
-    bd.pesquisar(despesa)
+    let despesas = bd.pesquisar(despesa)
+
+    let listaDespesas = document.getElementById('listadespesas')
+
+    //percorrer array despesas
+    despesas.forEach(function (d) {
+        //console.log(d)
+
+        //inserir linhas
+        let linha = listaDespesas.insertRow()
+
+        //inserir valores / colunas 
+
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+
+        switch (d.tipo) {
+            case '1': d.tipo = "Alimentação"
+                break;
+            case '2': d.tipo = "Educação"
+                break;
+            case '3': d.tipo = "Lazer"
+                break;
+            case '4': d.tipo = 'Saúde'
+                break;
+            case '5': d.tipo = 'Transporte'
+                break;
+
+            default:
+                break;
+        }
+        linha.insertCell(1).innerHTML = `${d.tipo}`
+        linha.insertCell(2).innerHTML = `${d.descricao}`
+        linha.insertCell(3).innerHTML = `${d.valor}`
+    })
 
 }
