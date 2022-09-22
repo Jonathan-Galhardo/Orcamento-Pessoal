@@ -1,17 +1,21 @@
 # Orçamento-Pessoal
 
-## Dividindo a tarefa em pequenas partes:
-- [x] Iniciando o Projeto 
-    - [x] Criar página index com Inputs
-    - [x] Criar página Consulta
-- [x] Criar e testar arquivos js e css
-- [x] Cadastro de Despesas 
-    - [x] Recuperar os dados nos Inputs
-    - [x] Criar classe despesa 
-- [x] Criar Base de Dados
-    - [x] Salvar dados no localStorage
-    - [x] Implementar objeto Bd
-    - [x] Criar Indices Dinâmicos      
-- [x] Validar dados antes do registro
-    - [x] Testar os dados antes de salvar
-    - [x] Feedback visual para usuário  
+## Deploy da aplicação
+https://orcamento-pessoal-two.vercel.app/
+
+## Tecnologias utilizadas:
+- CSS3
+- HTML5
+- JavaScript
+
+## Estrutura do site:
+- Cadastro: O usuário poderá cadastrar diversas despesas preenchendo os campos solicitados. 
+- Validação: Os dados só serão salvos se o preenchimento dos campos estiverem corretos, caso contrário o sistema exibe um alerta de correção. 
+- Local de Armazenamento dos dados: Os dados ficam salvos no Local Storage do navegador. 
+- Consulta: é possível acessar os dados na aba consulta, assim como aplicar diversos filtros separados ou associados. 
+
+## Responsividade:
+Visando a facilidade da navegação em todos os dispositivos o site foi criado com versões para notbook, tablets e smartphones.
+
+## Desenvolvedor:
+Jonathan Galhardo - Dev Frontend (55) 9.8438-9850
