@@ -208,12 +208,15 @@ function carregaListaDespesas() {
 
             console.log(id)
             bd.removerDespesas(id)
-
-
-
         }
         linha.insertCell(4).append(btn)
         console.log(d)
+
+
+        btn.addEventListener("click", function () {
+
+            location.reload();
+        })
     })
 }
 
