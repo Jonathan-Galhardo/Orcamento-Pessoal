@@ -205,8 +205,11 @@ function carregaListaDespesas() {
         btn.onclick = function () {
             //remover despesa
             let id = this.id.replace("id_despesa", "")
-            bd.removerDespesas
+
             console.log(id)
+            bd.removerDespesas(id)
+
+
 
         }
         linha.insertCell(4).append(btn)
