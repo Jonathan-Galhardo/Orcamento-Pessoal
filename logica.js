@@ -199,11 +199,13 @@ function carregaListaDespesas() {
         let btn = document.createElement("button")
         btn.className = "btn btn-danger"
         btn.innerHTML = '<i class="fas fa-times"></i>'
+        btn.id = `id_despesa${d.id}.id`
         btn.onclick = function () {
             //remover despesa
 
         }
         linha.insertCell(4).append(btn)
+        console.log(d)
     })
 }
 
