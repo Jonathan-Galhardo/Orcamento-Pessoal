@@ -60,6 +60,8 @@ class Bd {
                 continue
             }
 
+            despesa.id = i
+
             despesas.push(despesa)
         }
 
@@ -197,6 +199,10 @@ function carregaListaDespesas() {
         let btn = document.createElement("button")
         btn.className = "btn btn-danger"
         btn.innerHTML = '<i class="fas fa-times"></i>'
+        btn.onclick = function () {
+            //remover despesa
+
+        }
         linha.insertCell(4).append(btn)
     })
 }
