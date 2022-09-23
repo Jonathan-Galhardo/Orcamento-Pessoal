@@ -111,7 +111,9 @@ class Bd {
         tipo.value = ''
         descricao.value = ''
         valor.value = ''
-
+    }
+    removerDespesas(id) {
+        localStorage.removeItem(id)
     }
 }
 
@@ -199,9 +201,12 @@ function carregaListaDespesas() {
         let btn = document.createElement("button")
         btn.className = "btn btn-danger"
         btn.innerHTML = '<i class="fas fa-times"></i>'
-        btn.id = `id_despesa${d.id}.id`
+        btn.id = `id_despesa${d.id}`
         btn.onclick = function () {
             //remover despesa
+            let id = this.id.replace("id_despesa", "")
+            bd.removerDespesas
+            console.log(id)
 
         }
         linha.insertCell(4).append(btn)
